@@ -7,12 +7,14 @@ body {
 .parentDiv {
     height: 1000px;
     display: grid;
-    grid-template-rows: 80%;
+    grid-template-rows: 70%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #mainText {
     margin: 0px;
-    padding: 2px;
+    padding: 0px;
     font-size: 100px;
     align-items: center;
 
@@ -20,11 +22,37 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+
+    font-family: monospace;
+    color: #F5F5F5;
 }
 
 #mainText>p {
     margin: 0px;
-    padding: 0px;
-    font-family: 'Lato', sans-serif;
-    color: #F5F5F5;
+    padding: 2px;
+}
+
+#typed-text {
+    color: #33FF33;
+}
+
+/*For the "typing" cursor.*/
+.cursor {
+    color: #33FF33;
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
 }
