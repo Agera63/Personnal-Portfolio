@@ -6,38 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personnal Portofolio - Eric Z</title>
     <link rel="stylesheet" href="CSS/Header.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <!--Importing AOS for smooth transitions-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    <!--Start of header-->
     <nav id="navbar">
         <ul id="headerUl">
-            <li id="headerLi"><a href="#" id="headerA">Home</a></li>
-            <li id="headerLi"><a href="#" id="headerA">About Me</a></li>
-            <li id="headerLi"><a href="#" id="headerA">Projects</a></li>
+            <li id="headerLi" data-aos="fade-down" data-aos-duration="1500">
+                <a href="#" id="headerA">Home</a>
+            </li>
+            <li id="headerLi" data-aos="fade-down" data-aos-duration="2000">
+                <a href="./HTML/aboutMe.html" id="headerA">About Me</a>
+            </li>
+            <li id="headerLi" data-aos="fade-down" data-aos-duration="2500">
+                <a href="./HTML/projects.html" id="headerA">Projects</a>
+            </li>
         </ul>
     </nav>
+    <!--End of header-->
+
 
     <br>
     <br>
-    <br>
-    <br>
 
-    <div class="parentDiv">
-        <div id="mainText">
-            <p>Hi, my name is Eric!</p>
+    <div id="mainText">
+        <p>Hi, my name is Eric!</p>
 
-            <div id="changingTextDiv">
-                I am a<span id="typed-text"></span><span class="cursor">|</span>
+        <div id="changingTextDiv">
+            I am a<span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+    </div>
+
+    <div id="otherDiv">
+        <p id="AMText" data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="500"> More about me!</p>
+        <div id="otherPageContainer">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                <h1>About me</h1>
+                <p>A motivated developer focused on building clean, functional, and scalable applications. I enjoy
+                    understanding how things work under the hood and learning by building real projects. Currently
+                    developing full-stack skills with JavaScript and C#, with a strong interest in problem-solving and
+                    continuous improvement.</p>
+                <a href="./HTML/aboutMe.html">Go to page</a>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                <h1>Projects</h1>
+                <p> A collection of personal and learning projects built to explore web development, game development,
+                    application development and many more concepts. These projects range from front-end interfaces to
+                    logic-driven applications, each
+                    focused on learning new technologies, strengthening fundamentals, and applying concepts through
+                    hands-on experimentation.</p>
+                <a href="./HTML/projects.html">Go to page</a>
             </div>
         </div>
     </div>
 
-    <div id="mySkills"></div>
-
     <!--Allows for navbar to move up while scorlling up-->
     <Script src="Js/HeaderScroll.js"></Script>
     <Script src="Js/mainPage.js"></Script>
+
+    <!--Other script for AOS : https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
