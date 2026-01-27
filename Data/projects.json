@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "id": "ChessProject",
+            "name": "Console Chess Project",
+            "language": "Java",
+            "description": "Just like any other chess game, you some games against Stockfish in the console of your computer."
+        },
+        {
+            "id": "WordUnscrambbler",
+            "name": "Console Word Unscrambbler",
+            "language": "Java",
+            "description": "After you give this program a .txt file of words, it is set up to find words. Simply give this program some letters and it will find all words containing these inputed letters."
+        },
+        {
+            "id": "RubyMcMod",
+            "name": "OP Ruby Addon",
+            "language": "Java",
+            "description": "A Minecraft Mod that allows you to add an overpowered ruby to the game."
+        }
+    ]
+}

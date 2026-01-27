@@ -63,7 +63,7 @@ body {
 #AMText {
     font-size: 100px;
     font-family: monospace;
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
 }
 
@@ -74,11 +74,15 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 
     width: 350px;
     height: 350px;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     justify-items: center;
 }
 
@@ -87,6 +91,7 @@ body {
     gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 /*Styling elements inside otherPageContainer boxes*/
@@ -95,13 +100,35 @@ body {
 }
 
 #otherPageContainer>div>p {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#aboutMe {
+    font-size: 19px;
+}
+
+#projects {
+    font-size: 17px;
 }
 
 #otherPageContainer>div>a {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
+    font-weight: bold;
+    color: #101010;
     border: 5px solid #F5F5F5;
     border-radius: 5px;
     padding: 10px;
+    background-color: #F5F5F5;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+#otherPageContainer>div>a:hover {
+    transition: 0.3s;
+    border-color: #33FF33;
+    background-color: #33FF33;
 }

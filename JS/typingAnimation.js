@@ -7,7 +7,7 @@ let wordIndex = 0;
 let isDeleting = false;
 
 //Word list that will show and be typed
-const wordList = ["programmer", "student"];
+const wordList = ["programmer", "web developper", "game developper", "software engineer", "student"];
 let word = " " + wordList[wordIndex] + ".";
 
 
@@ -22,7 +22,7 @@ function type() {
             setTimeout(type, 100);
         } else {
             isDeleting = true;
-            setTimeout(type, 5000);
+            setTimeout(type, 4000);
         }
 
     } else {
