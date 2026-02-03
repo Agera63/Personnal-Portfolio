@@ -1,4 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
     background-color: #101010;
     gap: 100px;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutContainer {
+    width: auto;
+
+    border: 5px solid #F5F5F5;
+    border-radius: 25px;
+    margin: 200px;
+    
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    max-width: 80%;
+    transition: transform .2s;
+}
+
+#AboutContainer:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+#divText > h1 {
+    color: #33FF33;
+    
+    margin-top: 80px;
+    margin-bottom: 0px;
+    padding: 0px;
+
+    font-size: 125px;
+    font-family: monospace;
+}
+
+#divText > p {
+    color: #F5F5F5;
+
+    margin: 0px;
+    padding: 5px;
+
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+}
+
+#divPhoto > img {
+    width: 444px;
+    height: 566px;
 }
