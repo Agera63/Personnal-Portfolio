@@ -48,6 +48,3 @@ function type() {
         }
     }
 }
-
-//First call to start the chain
-type();
