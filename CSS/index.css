@@ -132,3 +132,150 @@ body {
     border-color: #33FF33;
     background-color: #33FF33;
 }
+
+/*If screen smaller then 1636, need to change main text*/
+@media (max-width: 1636px) {
+    #mainText {
+        font-size: 50px;
+    }
+
+    #changingTextDiv {
+        font-size: 50px;
+    }
+
+    #typed-text {
+        font-size: 50px;
+    }
+
+    #cursor {
+        font-size: 50px;
+    }
+}
+
+/*Tablet size*/
+@media (max-width: 1023px) {
+    #mainText {
+        font-size: 3em;
+        height: 650px;
+    }
+
+    #changingTextDiv {
+        font-size: 1em;
+    }
+
+    #typed-text {
+        font-size: 1em;
+    }
+
+    #cursor {
+        font-size: 1em;
+    }
+
+    #otherDiv {
+        width: 100%;
+    }
+
+    #otherDiv>p {
+        font-size: 2em;
+    }
+
+    #otherPageContainer {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    #otherPageContainer>div {
+        width: 50%;
+        height: 47.5%;
+    }
+
+    #otherPageContainer>div>h1 {
+        font-size: 1.25em;
+    }
+
+    #aboutMe {
+        font-size: 1em;
+    }
+
+    #projects {
+        font-size: 0.8em;
+    }
+
+    #otherPageContainer>div>a {
+        font-size: 0.75em;
+        width: 35%;
+        height: 10%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 2px;
+    }
+}
+
+/*Phone CSS styles*/
+@media (max-width: 767px) {
+    #mainText {
+        font-size: 1.8em;
+        height: 650px;
+    }
+
+    #changingTextDiv {
+        font-size: 1em;
+    }
+
+    #typed-text {
+        font-size: 1em;
+    }
+
+    #cursor {
+        font-size: 1em;
+    }
+
+    #otherDiv {
+        width: 100%;
+    }
+
+    #otherDiv>p {
+        font-size: 2em;
+    }
+
+    #otherPageContainer {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    #otherPageContainer>div {
+        width: 50%;
+        height: 47.5%;
+    }
+
+    #otherPageContainer>div>h1 {
+        font-size: 1.25em;
+    }
+
+    #aboutMe {
+        font-size: 1em;
+    }
+
+    #projects {
+        font-size: 0.8em;
+    }
+
+    #otherPageContainer>div>a {
+        font-size: 0.75em;
+        width: 35%;
+        height: 10%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 2px;
+    }
+}

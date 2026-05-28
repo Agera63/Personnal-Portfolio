@@ -42,16 +42,16 @@
     </div>
 
     <div id="otherDiv">
-        <p id="AMText" data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="500"> More about me!</p>
+        <p id="AMText" data-aos="zoom-in" data-aos-duration="1500"> More about me!</p>
         <div id="otherPageContainer">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+            <div id="left-div" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Who am I?</h1>
                 <p id="aboutMe">A motivated and curious student driven to grow through challenges and continuous
                     learning. I enjoy building projects, understanding how systems work, and improving my skills by
                     experimenting, problem-solving, and pushing beyond my comfort zone.</p>
                 <a href="./HTML/aboutMe.html">Go to page</a>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+            <div id="right-div" data-aos="fade-left" data-aos-duration="1000">
                 <h1>Projects</h1>
                 <p id="projects"> A collection of personal and learning projects built to explore web development, game
                     development,
@@ -67,6 +67,7 @@
     <!--Allows for navbar to move up while scorlling up-->
     <script src="JS/HeaderScroll.js"></script>
     <script src="JS/typingAnimation.js"></script>
+    <script src="JS/mobileDetector.js"></script>
 
     <!--Other script for AOS : https://michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
