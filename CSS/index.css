@@ -290,7 +290,7 @@ body {
         grid-auto-columns: 9rem;
     }
 
-    #skillsDiv .wrapper i {
+    #skillsDiv .container .wrapper i {
         font-size: 5.5em;
     }
 }
@@ -370,6 +370,10 @@ body {
     #skillsDiv .container {
         width: 100%;
         padding: 10px;
+    }
+
+    #skillsDiv .container .wrapper i {
+        font-size: 4.75em;
     }
 
     #skillsDiv .wrapper {
