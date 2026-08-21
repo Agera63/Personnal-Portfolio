@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: #101010;
+    margin: 0;
+    padding: 0;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    padding-top: 80px;
+    box-sizing: border-box;
+
+    p:not(#form-status) {
+        color: #33FF33;
+        font-size: 5em;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+
+        margin: 0 0 0.5em 0;
+    }
+}
+
+#contact-form {
+    width: auto;
+    min-width: 500px;
+    max-width: 80%;
+
+    border: 5px solid #F5F5F5;
+    border-radius: 25px;
+
+    padding: 40px 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    box-sizing: border-box;
+}
+
+#contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: #F5F5F5;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    background-color: #101010;
+    color: #F5F5F5;
+
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+
+    padding: 12px 15px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+    font-weight: normal;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+#contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+
+    /* Hide scrollbar (Firefox) */
+    scrollbar-width: none;
+    /* Hide scrollbar (IE/Edge legacy) */
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar (Chrome, Safari, other WebKit browsers) */
+#contact-form textarea::-webkit-scrollbar {
+    display: none;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    border-color: #33FF33;
+    transition: 0.3s;
+}
+
+#contact-form button[type="submit"] {
+    align-self: center;
+    margin-top: 10px;
+
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+
+    color: #101010;
+    border: 5px solid #F5F5F5;
+    border-radius: 5px;
+
+    padding: 10px 30px;
+    background-color: #F5F5F5;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-form button[type="submit"]:hover {
+    border-color: #33FF33;
+    background-color: #33FF33;
+    transition: 0.3s;
+}
+
+#form-status {
+    color: #33FF33;
+
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+
+    margin: 20px 0 0 0;
+}
+
+/*Tablet size*/
+@media (max-width: 1023px) {
+    #form-container p:not(#form-status) {
+        font-size: 3.5em;
+    }
+
+    #contact-form {
+        min-width: unset;
+        width: 80%;
+        padding: 30px;
+    }
+
+    #contact-form label {
+        font-size: 1.1em;
+    }
+}
+
+/*Phone CSS styles*/
+@media (max-width: 676px) {
+    #form-container {
+        padding-top: 110px;
+    }
+
+    #form-container p:not(#form-status) {
+        font-size: 2em;
+    }
+
+    #contact-form {
+        width: 90%;
+        padding: 20px;
+        gap: 18px;
+    }
+
+    #contact-form label {
+        font-size: 1em;
+    }
+
+    #contact-form button[type="submit"] {
+        width: 100%;
+    }
+
+    #form-status {
+        font-size: 1em;
+    }
+}

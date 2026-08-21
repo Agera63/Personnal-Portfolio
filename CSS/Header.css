@@ -63,11 +63,27 @@ body {
     #navbar {
         /*100vw = 100% of the viewport width*/
         width: 100vw;
-        padding: 0;
+        height: auto;
+        min-height: 80px;
+        padding: 10px 0;
+    }
+
+    #headerUl {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 8px;
     }
 
     #headerA {
         padding: 0 1em;
         font-size: 1em;
+    }
+}
+
+/*Small phone CSS styles*/
+@media (max-width: 400px) {
+    #headerA {
+        padding: 0 0.6em;
+        font-size: 0.8em;
     }
 }

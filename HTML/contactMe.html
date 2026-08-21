@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My projects - Eric Z</title>
+    <title>Contact Me</title>
 
+    <!-- Modifiy the css refs -->
     <link rel="stylesheet" href="../CSS/Header.css">
-    <link rel="stylesheet" href="../CSS/projects.css">
+    <link rel="stylesheet" href="../CSS/contactMe.css">
 
     <!--Importing AOS for smooth transitions-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-
 <body>
     <!--Start of header-->
     <nav id="navbar">
@@ -24,7 +23,7 @@
                 <a href="./aboutMe.html" id="headerA">About Me</a>
             </li>
             <li id="headerLi" data-aos="fade-down" data-aos-duration="2500">
-                <a href="#" id="headerA">Projects</a>
+                <a href="./projects.html" id="headerA">Projects</a>
             </li>
             <li id="headerLi" data-aos="fade-down" data-aos-duration="3000">
                 <a href="./contactMe.html" id="headerA">Contact Me</a>
@@ -32,21 +31,43 @@
         </ul>
     </nav>
     <!--End of header-->
-    <div id="pageTitle" data-aos="fade-down" data-aos-duration="1000">
-        <h1>My projects : </h1>
-    </div>
 
-    <div id="mainContainer"></div>
+    <div id="form-container">
+        <p>Contact me!</p>
+
+        <!-- Using Formspree service to redirect content to my email -->
+        <form id="contact-form" action="https://formspree.io/f/xdenjene" method="POST">
+            <label>
+                Your Name:
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Your Email:
+                <input type="email" name="_replyto" required>
+            </label>
+            <label>
+                Message:
+                <textarea name="message" required></textarea>
+            </label>
+
+            <!-- Honeypot field: hidden from real users, often filled by bots -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-status"></p>
+    </div>
+    
 
     <script src="../JS/HeaderScroll.js"></script>
-    <script src="../JS/projectDisplaying.js" type="module"></script>
     <script src="../JS/mobileDetector.js"></script>
+    <!-- Needed for the form submission -->
+    <script src="../JS/contactFormSubmission.js"></script>
 
-    <!--Other script for AOS : https://michalsnik.github.io/aos/ -->
+    <!--Other script for AOS : https://michalsnik.github.io/aos/-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
-
 </html>
